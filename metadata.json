@@ -1,0 +1,6 @@
+{
+  "name": "AirOps Intelligence",
+  "description": "AI-Powered Airline Operations & Business Solutions Platform for operational analytics, process automation, and enterprise decision support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
