@@ -4,6 +4,8 @@ A portfolio project that turns flight delay data into clear on-time performance 
 
 > **Portfolio prototype.** All data in this app is **synthetic sample data** (300 made-up flights). It is not connected to any real airline system, and the savings figures are formula-based estimates, not measured results.
 
+**Live demo:** https://airops-intelligence.ai.studio
+
 ![Operations Intelligence workspace](docs/screenshots/operations-intelligence.png)
 
 ## The problem
