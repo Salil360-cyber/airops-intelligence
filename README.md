@@ -22,6 +22,20 @@ Airline delay data usually sits in separate files and systems, so it is hard to 
 | **Performance Tracker** | Track each solution idea by stage and keep estimated benefits separate from demonstrated ones. |
 | **Documentation & Reports** | Generate and download summary reports from the current data. |
 
+## A closer look
+
+### AI Business Copilot
+
+![AI Business Copilot](docs/screenshots/ai-business-copilot.png)
+
+A chat screen for asking questions about the flight data in plain English, for example "Why is network OTP low?" or "Which routes need investigation?". The Copilot starts with the numbers the app has already calculated (300 flights, 75.3% on-time performance) and explains them; it does not calculate anything itself. Suggested questions, a prompt library and an airline filter make it quick to use, and separate tabs cover delay investigation, report writing and answer quality checks.
+
+### Documentation & Reports
+
+![Documentation and Reports](docs/screenshots/documentation-reports.png)
+
+This screen turns the current data into ready-to-share reports. There are three report types: an operational summary (on-time performance, delay reasons and the most delayed routes), an automation roadmap (the 6 ideas with their formula-based 6,315 hours estimate), and a requirements pack (user stories, requirements and acceptance criteria). Each report can be copied, downloaded or printed.
+
 ## Key numbers from the sample data
 
 | Metric | Value |
