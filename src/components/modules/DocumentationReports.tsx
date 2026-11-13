@@ -39,14 +39,14 @@ export const DocumentationReports: React.FC<DocumentationReportsProps> = ({
 
   const executiveAuditContent = `# AIROPS EXECUTIVE OPERATIONAL AUDIT & ON-TIME PERFORMANCE (OTP) BRIEF
 Generated: ${new Date().toISOString().split('T')[0]} | AirOps Intelligence Engine
-Classification: Executive Operations Committee Confidential
+Classification: Portfolio Demo - Synthetic Sample Data
 
 --------------------------------------------------------------------------------
 
 1. FLEET OPERATIONAL STATUS SUMMARY
 - Total Flights Analyzed: ${metrics.totalFlights} legs
 - On-Time Performance (OTP-${otpThreshold}): ${metrics.onTimePerformance}% (${otpThreshold}-Minute Departure Buffer)
-- Delayed Flights (>${otpThreshold} min): ${metrics.delayedFlights} (${metrics.totalFlights > 0 ? Math.round((metrics.delayedFlights / metrics.totalFlights) * 100) : 0}% of operations)
+- Delayed Flights (>${otpThreshold} min): ${metrics.delayedFlights} (${metrics.delayPercentage}% of operated flights)
 - Cancelled Flights: ${metrics.cancelledFlights} (${metrics.totalFlights > 0 ? ((metrics.cancelledFlights / metrics.totalFlights) * 100).toFixed(1) : 0}% rate)
 - Total Accumulated Delay: ${metrics.totalDelayMinutes.toLocaleString()} minutes
 - Average Delay Duration: ${metrics.avgDelayMinutes} minutes per delayed flight

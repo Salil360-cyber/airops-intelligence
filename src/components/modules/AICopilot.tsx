@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect, useMemo } from 'react';
+import { renderMessageText } from '../../utils/inlineMarkdown';
 import {
   Sparkles,
   Send,
@@ -790,7 +791,7 @@ Provide:
                                 <BarChart3 className="w-3.5 h-3.5" />
                                 [Calculated Fact]
                               </div>
-                              <p className="text-slate-200 text-xs leading-relaxed">{structured.fact}</p>
+                              <p className="text-slate-200 text-xs leading-relaxed whitespace-pre-wrap">{renderMessageText(structured.fact)}</p>
                             </div>
                           )}
 
@@ -800,7 +801,7 @@ Provide:
                                 <AlertTriangle className="w-3.5 h-3.5" />
                                 [Operational Interpretation]
                               </div>
-                              <p className="text-slate-200 text-xs leading-relaxed">{structured.interpretation}</p>
+                              <p className="text-slate-200 text-xs leading-relaxed whitespace-pre-wrap">{renderMessageText(structured.interpretation)}</p>
                             </div>
                           )}
 
@@ -810,7 +811,7 @@ Provide:
                                 <CheckCircle2 className="w-3.5 h-3.5" />
                                 [Recommendation]
                               </div>
-                              <p className="text-slate-200 text-xs leading-relaxed">{structured.recommendation}</p>
+                              <p className="text-slate-200 text-xs leading-relaxed whitespace-pre-wrap">{renderMessageText(structured.recommendation)}</p>
                             </div>
                           )}
 
@@ -820,12 +821,12 @@ Provide:
                                 <Compass className="w-3.5 h-3.5" />
                                 [Next Investigation & Telemetry Required]
                               </div>
-                              <p className="text-slate-200 text-xs leading-relaxed">{structured.nextInvestigation}</p>
+                              <p className="text-slate-200 text-xs leading-relaxed whitespace-pre-wrap">{renderMessageText(structured.nextInvestigation)}</p>
                             </div>
                           )}
                         </div>
                       ) : (
-                        <div className="whitespace-pre-wrap">{msg.text}</div>
+                        <div className="whitespace-pre-wrap">{renderMessageText(msg.text)}</div>
                       )}
 
                       {/* Governance Disclaimer */}
